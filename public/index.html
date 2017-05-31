@@ -1,0 +1,57 @@
+<!doctype html>
+<html ng-app="topsderApp">
+<head>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />  
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script type="text/javascript" src="topsder.js"></script>
+    
+</head>
+<body onload="startApp()">
+
+	<div class="jumbotron">
+		<div class="container">
+			<h2>Topsder Playlist Creator</h2>
+			<p>
+                Create spotify playlists from music based subreddits!
+			</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Subreddit:</h2>
+				<div class="form-group">
+					<textarea class="form-control" id="alltext" rows="1" maxlength="50"></textarea>
+                    <h2>Timeframe:</h2>
+                    <label class="radio-inline active"><input type="radio" name="tmfrmradio" checked="" value="day">Day</label>
+                    <label class="radio-inline"><input type="radio" name="tmfrmradio" value="week">Week</label>
+                    <label class="radio-inline"><input type="radio" name="tmfrmradio" value = "month">Month</label>
+                    <label class="radio-inline"><input type="radio" name="tmfrmradio" value="year">Year</label>
+				</div>
+				<p>
+					<button class="btn btn-lg btn-primary btn-success" id="start">Create a Spotify playlist!</button>
+				</p>
+				<div id="status"></div>
+			</div>
+			<div class="col-md-6">
+				<h2>Track Results</h2>
+				<div id="tracklist"></div>
+			</div>
+		</div>
+	</div>
+    
+    <div class="jumbotron footer">
+        <div class="row">
+            <div class="container">
+                <h4>About: Topsder searches for the most popular songs posted on music subreddits that are available on spotify.</h4>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
