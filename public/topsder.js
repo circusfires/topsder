@@ -69,7 +69,7 @@
     }
 
     var client_id = '7194583055244e608d51f41eaa2a8920';
-    var redirect_uri = 'http://localhost:8888/callback.html';
+    var redirect_uri = 'https://topsderapp.herokuapp.com/callback.html';
 
     var doLogin = function(callback) {
         var url = 'https://accounts.spotify.com/authorize?client_id=' + client_id +
